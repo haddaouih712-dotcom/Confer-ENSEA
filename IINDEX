@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eloquence ENSEA - Libérez votre parole</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #ff6b6b;
+            --secondary: #4ecdc4;
+            --accent: #ffe66d;
+            --dark: #292f36;
+            --light: #f7fff7;
+        }
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: var(--dark);
+            line-height: 1.6;
+            background-color: var(--light);
+        }
+        header {
+            background-color: var(--primary);
+            color: white;
+            padding: 1.5rem 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+        nav a:hover {
+            color: var(--accent);
+            transform: scale(1.1);
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        .hero {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 4rem 0;
+            text-align: center;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        .hero p {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+        }
+        .btn {
+            display: inline-block;
+            background-color: var(--accent);
+            color: var(--dark);
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            transition: all 0.3s;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .btn:hover {
+            background-color: #ffd93d;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+        }
+        .section {
+            padding: 3rem 0;
+        }
+        .section h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+            font-size: 2.2rem;
+            color: var(--primary);
+        }
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+        .team-member {
+            background-color: white;
+            border-radius: 10px;
+            padding: 1.5rem;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .team-member:hover {
+            transform: translateY(-10px);
+        }
+        .team-member img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 1rem;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+        .gallery img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            background-color: var(--dark);
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 2rem;
+        }
+        footer a {
+            color: var(--secondary);
+            text-decoration: none;
+        }
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 0.8rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        textarea {
+            height: 150px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+      
+         <h1>Eloquence ENSEA</h1>
+        <nav>
+            <ul>
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#equipe">Notre équipe</a></li>
+                <li><a href="#galerie">Galerie fictifs</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="accueil" class="hero">
+    
+        <div class="container">
+               
+            <h1>Libérez votre parole</h1>
+             <img src="/GEN.html/conferlogo.jpeg" alt="Membre 1">
+            <p>Rejoignez notre association pour maîtriser l'art de l'éloquence et du débat.</p>
+            <a href="#contact" class="btn">Nous rejoindre</a>
+        </div>
+    </section>
+
+    <section id="equipe" class="section">
+        <div class="container">
+            <h2>Notre équipe</h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    <img src="/WhatsApp Image 2026-08-16 at 22.14.05.jpeg" alt="Membre 1">
+                    <h3>Mohamed Haddaoui</h3>
+                    <p>Manager de Confer'ENSEA</p>
+                </div>
+                <div class="team-member">
+                    <img src="https://via.placeholder.com/100" alt="Membre 2">
+                    <h3>Yaqin Li</h3>
+                    <p>Trésorière</p>
+                </div>
+              
+            </div>
+        </div>
+    </section>
+
+    <section id="galerie" class="section">
+        <div class="container">
+            <h2>galerie fictifs</h2>
+            <div class="gallery">
+                <img src="\conferencevide.jpg" alt="Atelier 1">
+                <img src="\salle-conference-vide.png" alt="Atelier 2">
+   
+            </div>
+        </div>
+    </section>
+     <section id="contact" class="section">
+    <footer>
+
+        <div class="container">
+           
+             <h2>Contactez-nous</h2>
+            <p>Contact manager : <a href="mailto:eloquence@ensea.fr">mohamed.haddaoui@ensea.fr</a></p>
+             <p>Contact trésorière : <a href="mailto:eloe@ensea.fr">Yaqin.li@ensea.fr</a></p>
+        </div>
+         <p>&copy; 2026 Confer'ENSEA. Tous droits réservés.</p>
+    </footer>
+    </section>
+</body>
+</html>
